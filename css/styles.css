@@ -1321,20 +1321,12 @@ a {
 }
 
 .mentor-photo {
-  width: 130px;
-  height: 130px;
-  margin: 0 auto 20px;
-  border-radius: 50%;
+  width: 100%;
+  height: 260px;
+  margin-bottom: 20px;
+  border-radius: 16px;
   overflow: hidden;
   position: relative;
-  border: 4px solid var(--gray-200);
-  box-shadow: 0 8px 24px rgba(27, 43, 91, 0.15);
-  transition: border-color 0.4s ease, box-shadow 0.4s ease;
-}
-
-.mentor-card:hover .mentor-photo {
-  border-color: var(--blue-light);
-  box-shadow: 0 8px 32px rgba(46, 92, 184, 0.25);
 }
 
 .mentor-photo img {
@@ -1346,7 +1338,21 @@ a {
 }
 
 .mentor-card:hover .mentor-photo img {
-  transform: scale(1.08);
+  transform: scale(1.05);
+}
+
+.mentor-photo .mentor-avatar-placeholder {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  background: var(--gradient-main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--white);
 }
 
 .mentor-name {
@@ -1528,19 +1534,19 @@ a {
   box-shadow: 0 4px 16px rgba(46, 92, 184, 0.12);
 }
 
-.modal-mentor-avatar {
+.modal-mentor-initial {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  object-fit: cover;
-  object-position: top center;
+  background: var(--gradient-main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--white);
   flex-shrink: 0;
-  border: 2px solid var(--gray-200);
-  transition: border-color 0.3s ease;
-}
-
-.modal-mentor-btn:hover .modal-mentor-avatar {
-  border-color: var(--blue);
 }
 
 .modal-mentor-info {
