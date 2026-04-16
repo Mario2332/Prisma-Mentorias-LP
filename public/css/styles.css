@@ -1572,6 +1572,39 @@ a {
   transform: translateX(4px);
 }
 
+.modal-mentor-btn--disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  border-color: var(--red);
+  background: rgba(227, 38, 54, 0.04);
+  pointer-events: none;
+}
+
+.modal-mentor-btn--disabled:hover {
+  transform: none;
+  box-shadow: none;
+  border-color: var(--red);
+  background: rgba(227, 38, 54, 0.04);
+}
+
+.modal-mentor-btn--disabled .modal-mentor-avatar {
+  filter: grayscale(40%);
+}
+
+.modal-mentor-esgotado {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--red);
+  background: rgba(227, 38, 54, 0.1);
+  border: 1px solid rgba(227, 38, 54, 0.3);
+  border-radius: 20px;
+  padding: 4px 10px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
 /* ========================================
    CTA SECTION
    ======================================== */
