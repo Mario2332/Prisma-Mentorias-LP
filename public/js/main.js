@@ -323,12 +323,19 @@ function initMentorModal() {
     }
   });
 
-  // Mentor button clicks (placeholder - links to be added later)
+  // Mentor button clicks
   const mentorBtns = modal.querySelectorAll('.modal-mentor-btn');
   mentorBtns.forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
       const mentor = btn.getAttribute('data-mentor');
+
+      if (mentor === 'cayan') {
+        closeModal();
+        window.open('https://wa.me/5562999250014?text=Ol%C3%A1%2C%20vi%20seu%20an%C3%BAncio%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Mentoria%20PRISMA', '_blank');
+        return;
+      }
+
       const plan = modalPlanName.textContent;
       // TODO: Replace with actual purchase links per mentor/plan
       console.log(`Selected mentor: ${mentor}, Plan: ${plan}`);
